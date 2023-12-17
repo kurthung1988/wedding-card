@@ -326,12 +326,17 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
-     document.getElementByld(copyToClipboard1").onclick=function(){
-       this.textCont='하나 411-095040-200207';
-       const valOfDIV = document.getElementByld("myFuction1").inner Text;
-       const textArea = document.createElement('textarea');
-       document.body.appendChild(textArea)'
-       
+    </script>
+    <script type="text/javascript">
+
+document.getElementById('btn_a_copy').onclick = function() {
+    alert('복사되었습니다.');
+    const valOfDIV = document.getElementById("address").innerText;
+
+    const textArea = document.createElement('textarea');
+
+    document.body.appendChild(textArea);
+
     textArea.value = valOfDIV;
 
     textArea.select();
@@ -339,15 +344,7 @@ for (i = 0; i < acc.length; i++) {
 
     document.body.removeChild(textArea);
 }
-
-      function copyToClipboard2() {
-    var copyText = document.getElementById("myFunction2");
-  copyText.select();
-  copyText.setSelectionRange(0, 99999)
-  document.execCommand("copy");
-  alert("농협 301-4609-9605-71 : " + copyText.value);
-}
-    </script>
+</script>
     <div class = "bottom">
     </div>
   </body>
