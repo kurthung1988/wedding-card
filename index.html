@@ -178,14 +178,25 @@
       .active, .accordiaon:hover {
         background-color: #ccc;
       }
-      .account-item {
+      .paenl {
         margin: 0 48px 0;
         padding: 0 18px;
         text-align: center;
-        display: none;
-        overflow: hidden;
+        max-height: 0;
+        overflow: hidden transition panel;
+        transition: max-height 0.2s ease-out;
         background-color: #fff;
       } 
+      .accordion:after {
+        content: '\002B';
+        font-weight: bold;
+        font-size: 14px;
+        color: #fff;
+        float: right;
+        margin-left: 15px
+      }
+      .activee:after {
+        content: '\2212';
     </style>
   </head>
   <body>
