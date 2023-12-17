@@ -305,10 +305,10 @@
     </div>
     <div class="accordion">신부측 계좌번호</div>
     <div class="panel">
-      <p><b>황이근</b><a id="address">하나 411-095040-200207</a>
+      <p><b>황이근</b></span> <a id="address">하나 411-095040-200207</a>
         <button id="btn_a_copy">복사</button><br/>
-        <b>김연이</b><a id="address">농협 301-4609-9605-71 </a>
-        <button id="btn_a_copy">복사</button></p>
+        <b>김연이</b></span> <a id="address2">농협 301-4609-9605-71</a>
+        <button id="text">복사</button></p>
     </div>
     <script type="text/javascript">
       var acc = document.getElementsByClassName("accordion");
@@ -331,6 +331,24 @@ for (i = 0; i < acc.length; i++) {
 document.getElementById('btn_a_copy').onclick = function() {
     alert('복사되었습니다.');
     const valOfDIV = document.getElementById("address").innerText;
+
+    const textArea = document.createElement('textarea');
+
+    document.body.appendChild(textArea);
+
+    textArea.value = valOfDIV;
+
+    textArea.select();
+    document.execCommand('copy');
+
+    document.body.removeChild(textArea);
+}
+</script>
+        <script type="text/javascript">
+
+document.getElementById('text').onclick = function() {
+    alert('복사되었습니다.');
+    const valOfDIV = document.getElementById("address2").innerText;
 
     const textArea = document.createElement('textarea');
 
