@@ -163,13 +163,20 @@
         margin-bottom: 15px;
       }
       .account {
-        text-align: center;
         background-color: #0a4a51;
         color: #fff;
         cursor: pointer;
         padding: 4px 20px;
         margin: 0 48px 0;
+        width: 100%;
+        text-align: center;
+        border: none;
+        outline: none;
         transition: max-height 0.2s;
+      }
+      .active,
+      .account:hover {
+        background-color: #ccc;
       }
       .account-item {
         text-align: center;
@@ -177,7 +184,7 @@
         padding: 0 18px;
         overflow: hidden;
         background-color: #fff;
-        
+      } 
     </style>
   </head>
   <body>
