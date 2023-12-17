@@ -307,10 +307,10 @@
     <div class="panel">
       <p> 하나 411-095040-200207 <b>황이근</b>
         <input type="text" value="하나 411-095040-200207" id="myFunction1">
-        <button onclick=copyToClipboard()">복사</button><br/>
+        <button onclick=copyToClipboard1()">복사</button><br/>
         농협 301-4609-9605-71 <b>김연이</b>
         <input type="text" value="농협 301-4609-9605-71" id="myFunction1">
-        <button onclick="copyToClipboard()">복사</button></p>
+        <button onclick="copyToClipboard2()">복사</button></p>
     </div>
     <script type="text/javascript">
       var acc = document.getElementsByClassName("accordion");
@@ -327,14 +327,14 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
-     function copyToClipboard() {
+     function copyToClipboard1() {
     var copyText = document.getElementById("myInput1");
   copyText.select();
   copyText.setSelectionRange(0, 99999)
   document.execCommand("copy");
   alert("하나 411-095040-200207 : " + copyText.value);
 }
-      function copyToClipboard() {
+      function copyToClipboard2() {
     var copyText = document.getElementById("myInput2");
   copyText.select();
   copyText.setSelectionRange(0, 99999)
