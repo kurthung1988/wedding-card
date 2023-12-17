@@ -62,29 +62,6 @@
         padding: 20px 0 16px;
         font-weight: bold;
       }
-      .accountnumber {
-        color: #0E5E6F;
-        font-size: 18px;
-        padding: 30px 0 10px;
-        text-align: center;
-      }
-      .bank-details {
-        color: #333;
-        font-size: 13px;
-        padding: 30px 0 10px;
-        text-align: center;
-      }
-      .bank-details-subject {
-        color: #333;
-        font-size: 16px;
-        padding: 20px 0 10px;
-        text-align: center;
-        font-weight: bold;
-      }
-      .bank-details-subject p {
-        color: #0E5E6F;
-        padding: 0px;
-      }
       .banner,
       .entry {
         background-color: #fff;
@@ -185,6 +162,22 @@
         font-size: 12px;
         margin-bottom: 15px;
       }
+      .account {
+        text-align: center;
+        background-color: #0a4a51;
+        color: #fff;
+        cursor: pointer;
+        padding: 4px 20px;
+        margin: 0 48px 0;
+        transition: max-height 0.2s;
+      }
+      .account-item {
+        text-align: center;
+        margin: 0 48px 0;
+        padding: 0 18px;
+        overflow: hidden;
+        background-color: #fff;
+        
     </style>
   </head>
   <body>
@@ -261,7 +254,7 @@
     <div class="my-3">
        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.1934597166087!2d120.3023026!3d22.609249800000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e031eb616e5a9%3A0x1de7878f20353802!2sTAI%20Urban%20Resort!5e0!3m2!1sko!2stw!4v1700574196390!5m2!1sko!2stw" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
-    <div class="subtitle">🛩 <b>가까운 공항</b></div>
+    <div class="subtitle2">🛩 <b>가까운 공항</b></div>
     <div class="greetings-text">
         <b>高雄國際機場 가오슝 국제공항 (KHH)</b><br />
         → 지하철 이용 (南岡山 Gangshan South방향)<br />
@@ -270,23 +263,31 @@
         <b>桃園國際飛機場 타오위안 국제공항 (TPE)</b><br />
         → 고속철도 이용 (桃園HSR Taoyuan HSR 역)<br />
         총 2시간 30분 소요
-    <div class="subtitle">🚅 <b>가까운 고속철도 역</b></div>
+    <div class="subtitle2">🚅 <b>가까운 고속철도 역</b></div>
         <b>新左營站 Zuoying 주어잉</b><br />
         → 지하철 이용 (小港 Xiaogang방향)<br />
         총 30분 소요<br />
-    <div class="subtitle">🚇 <b>가까운 지하철 역</b></div>
+    <div class="subtitle2">🚇 <b>가까운 지하철 역</b></div>
         <b>(빨간선)<br />
         三多商圈 Sanduo Shopping Dist. 산두오쇼핑구</b><br />
         2번 출구<br />
         → 도보 10분 소요
     </div>
-    <div class = "subtitle2">
+    <div class = "subtitle">
         <b>연락하기</b>
     </div>
     <div class = "line" style="display: flex; align-items: center; justify-content: center">
         <p><span class="relation">신부</span>&nbsp; 황인선</p>&nbsp;&nbsp;&nbsp;&nbsp;
         <a href="https://line.me/ti/p/gG4hvQdr6b">
         <img src="images/line_icon.png"></a>
+    </div>
+    <div class = "subtitle">
+        <b>마음 전하실 곳</b>
+    </div>
+    <button class="account">신부측 계좌번호</button>
+    <div classs="account-item" style="max-height:192px;">
+      <p> 하나 411-095040-200207 <b>황이근</b><br/>
+        농협 301-4609-9605-71 <b>김연이</b></p>
     </div>
     <div class = "bottom">
     </div>
